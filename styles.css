@@ -1,0 +1,634 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----Global Styles-----*/
+html {
+    background-color: #EBE8E0;
+    color: #A8BBB0;
+    max-width: 1280px;
+}
+
+header {
+    background-color: #D01110;
+    color: #0A0A00;
+}
+
+.breadcrumb {
+    display: none;
+}
+
+.logoCenter {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header a {
+    max-width: 100%;
+}
+
+header img {
+    padding-top: .7em;
+    max-width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    font-weight: 700;
+}
+
+nav li, footer li {
+    display: inline;
+}
+
+nav li a, footer, footer a {
+    text-decoration: none;
+    color: #0A0A00;
+}
+
+body {
+    background-color: #0A0A00;
+    font-size: 16px;
+}
+
+body a {
+    color: #F4EBD0;
+}
+
+h2, h3 {
+    text-align: center;
+    padding: 1em;
+}
+
+p {
+    text-align: center;
+    padding: 0em 1em 1em 1em;
+    line-height: 1.2;
+}
+
+#scheduleList {
+    display: flex;
+    justify-content: space-around;
+}
+
+#scheduleList li {
+    display: inline;
+    font-size: .8em;
+    background-color: #D01110;
+    border-radius: .3em;
+    padding: .3em;
+}
+
+#scheduleList li a {
+    text-decoration: none;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 1em;
+}
+
+section ul {
+    padding-bottom: .5em;
+}
+
+section ul li {
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: .2em;
+}
+
+footer {
+    background-color: #D01110;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer p {
+    font-size: .4em;
+    padding-top: 5px;
+}
+
+/*-----Mobile-----*/
+/*I used an Iphone 13 Pro Max as my breakpoint*/
+/*General mobile and home css*/
+@media all and (max-width: 480px) {
+    header a {
+        width: 25%;
+    }
+
+    nav {
+        padding-top: 1em;
+        padding-bottom: .5em;
+    }
+
+    nav li {
+        padding-right: 5px;
+    }
+
+    .splash img {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+    }
+
+    h2, h3 {
+        text-align: center;
+        padding: .5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    p {
+        text-align: center;
+        padding: 0em 1em 1em 1em;
+        line-height: 1.2;
+    }
+
+    .halfsplash img {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+    }
+
+    footer {
+        padding-top: 10px;
+    }    
+
+/*About Us edits*/
+
+
+/*Mobile Coaches edits*/
+    #benPic, #vanessaPic, #justinPic, #aaronPic, #gantPic, #rachelPic {
+        width: 100%;
+        max-width: 480px;
+        height: auto;
+    }
+
+/*Mobile Schedule edits*/
+
+
+/*Mobile Newcomers edits*/
+
+
+/*Mobile Contact Us edits*/
+    #addressPhone {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    #map img {
+        max-width: 480px;
+    }
+
+    .contactForm {
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    #name, #phone, #email {
+        width: 70%;
+    }
+
+    textarea {
+        width: 70%;
+        height: 5em;
+    }
+}
+
+/*-----Tablet-----*/
+@media all and (min-width: 481px) and (max-width: 780px) {
+    /*Tablet Home and general*/
+    header {
+        max-width: 780px;
+        max-height: 25vh;
+    }
+
+    header img {
+        max-height: 4em;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    @media all and (min-width: 640px) {
+        header {
+            font-size: 1.3em;
+        }
+    }
+
+    .splash img {
+        width: 100%;
+        max-width: 780px;
+        max-height: 75vh;
+        object-fit: cover;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .gridWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .a {
+        grid-column: 1/2;
+        border-right: .15em solid #D01110;
+        border-top: .15em solid #D01110;
+    }
+
+    .b {
+        grid-column: 2/3;
+        border-left: .15em solid #D01110;
+        border-top: .15em solid #D01110;
+    }
+
+    .halfsplash img {
+        width: 100%;
+        max-height: 30vh;
+        object-fit: cover;
+    }
+
+    #newPeople {
+        object-position: 50% 15%;
+    }
+
+    /*About edits*/
+    #retirement {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: .5em;
+    }
+
+    #retirementPic {
+        max-height: 250px;
+        width: auto;
+    }
+
+    /*Coaches edits*/
+    .coaches {
+        width: 100%;
+        max-width: 780px;
+        height: auto;
+        max-height: 70vh;
+        object-fit: cover;
+    }
+
+    .border {
+        border: .15em solid #D01110;
+    }
+
+    /*Schedule edits*/
+
+
+    /*Newcomers edits*/
+
+
+    /*Contact Us edits*/
+    #contactPic {
+        object-position: 50% 0%;
+    }
+
+    #contactGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #addressPhone {
+        grid-column: 1/2;
+        text-align: center;
+    }
+
+    #contactTable {
+        grid-column: 1/2;
+        font-size: .8em;
+    }
+
+    @media all and (min-width: 640px) {
+        #contactTable {
+            font-size: 1em;
+        }
+    }
+
+    #map {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        padding-right: 1em;
+    }
+
+    #map img {
+        width: 100%;
+        max-width: 780px;
+        height: auto;
+    }
+
+    .contactForm {
+        grid-column: 1/3;
+        min-width: 480px;
+        max-width: 780px;
+        text-align: center;
+        line-height: 1.3;
+        padding-top: 1em;
+    }
+
+    #name, #phone, #email {
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+        height: 5em;
+    }
+}  
+
+@media all and (min-width: 781px) {
+    /*General and home edits*/
+    header {
+        max-width: 1280px;
+        max-height: 25vh;
+    }
+    
+    header img {
+        max-height: 4em;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav li {
+        font-size: 1.6em;
+    }
+
+    .splash img {
+        width: 100%;
+        max-width: 1280px;
+        max-height: 75vh;
+        object-fit: cover;
+    }
+
+    #groupPic {
+        object-position: 50% 0%;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    .gridWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .a {
+        grid-column: 1/2;
+        border-right: .15em solid #D01110;
+        border-top: .15em solid #D01110;
+    }
+
+    .b {
+        grid-column: 2/3;
+        border-left: .15em solid #D01110;
+        border-top: .15em solid #D01110;
+    }
+
+    .halfsplash img {
+        width: 100%;
+        max-height: 30vh;
+        object-fit: cover;
+    }
+
+    #newPeople {
+        object-position: 50% 15%;
+    }
+
+    /*About edits*/
+    #retirement {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: .5em;
+    }
+
+    #familyPic {
+        object-position: 50% 45%;
+    }
+
+    #retirementPic {
+        max-height: 275px;
+        width: auto;
+    }
+
+    /*Team edits*/
+    #gridTeam {
+        padding: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        align-items: center;
+    }
+
+    #benPic, #justinPic, #gantPic {
+        grid-column: 1/2;
+    }
+
+    #vanessaPic, #aaronPic, #rachelPic {
+        grid-column: 2/3;
+    }
+
+    #benBio, #justinBio, #gantBio {
+        grid-column: 2/3;
+    }
+
+    #vanessaBio, #aaronBio, #rachelBio {
+        grid-column: 1/2;
+    }
+
+    #vanessaBio {
+        grid-row: 2/3;
+    }
+
+    #aaronBio {
+        grid-row: 4/5;
+    }
+
+    #rachelBio {
+        grid-row: 6/7;
+    }
+
+    .coaches {
+        width: 100%;
+        max-width: 100vw;
+        height: auto;
+        max-height: 70vh;
+        object-fit: cover;
+    }
+
+    #justinPic {
+        object-position: 50% 45%;
+    }
+
+    #aaronPic {
+        object-position: 50% 40%;
+    }
+
+    #gantPic {
+        object-position: 50% 45%;
+    }
+
+    .border {
+        border: .15em solid #D01110;
+    }
+
+    
+
+    /*Schedule edits*/
+    #scheduleList li{
+        font-size: 1.2em;
+    }
+
+    /*Newcomers edits*/
+
+
+
+    /*Contact Us edits*/
+    #contactPic {
+        object-position: 50% 3%;
+    }
+
+    #contactGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #addressPhone {
+        grid-column: 1/2;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    #contactTable {
+        grid-column: 1/2;
+        font-size: 1em;
+    }
+
+    #map {
+        grid-column: 2/3;
+        grid-row: 1/3;
+        padding-right: 1em;
+    }
+
+    #map img {
+        width: 100%;
+        max-width: 780px;
+        height: auto;
+    }
+
+    .contactForm {
+        grid-column: 1/3;
+        min-width: 480px;
+        max-width: 780px;
+        text-align: center;
+        line-height: 1.3;
+        padding-top: 1em;
+        font-size: 1em;
+    }
+
+    #name, #phone, #email {
+        width: 90%;
+    }
+
+    textarea {
+        width: 90%;
+        height: 10em;
+    }
+
+}
+
+@media all and (min-width: 1020px) {
+    #addressPhone, #contactTable, .contactForm {
+        font-size: 1.5em;
+    }
+}
